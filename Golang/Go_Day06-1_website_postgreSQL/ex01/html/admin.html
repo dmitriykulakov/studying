@@ -1,0 +1,31 @@
+{{ define "admin"}}
+
+{{ template "header" }}
+
+    <header class="header-main">
+      Admin page
+    </header>
+    <form class="" action="/save_article" method="post">
+      <div class="save_article">
+        <p><label for="login" id="lable_login">Login</label>
+        <input type="text" name="login" id="login" value=""
+        placeholder="Введите логин" maxlength="20"
+        name="login" id="login"> </p>
+        <p><label for="password" id="lable_password">Password</label>
+        <input type="password" name="password" value=""
+        placeholder="Введите пароль" maxlength="20"
+        name="password" id="password"> </p><br>
+        {{ if eq . 2 }}
+        <p class="article_add_result">your Login or Password is incorrect</p>
+        {{ end }}
+        <br><br>
+        <input type="text" name="title" id="new_article_title" placeholder="Введите название статьи">
+        <textarea name="text" id="new_article" placeholder="Текст статьи"></textarea>
+        <button id="button_add">Добавить</button>
+        {{ if eq . 1 }}
+        <p class="article_add_result">the artcicle is successfully added</p>
+        {{ end }}
+      </div>
+{{ template "footer" }}
+
+{{ end }}

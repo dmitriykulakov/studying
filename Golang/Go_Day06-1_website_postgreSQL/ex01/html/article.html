@@ -1,0 +1,18 @@
+{{ define "article"}}
+
+{{ template "header" }}
+
+<header class="header-main">
+  Article {{ .Id }}
+</header>
+
+    <div class="article_page">  
+      <div class="open_article_title">{{ .Title }}</div><br>
+      <!-- <pre class="article_text">{{ .ArticleText }}</pre> -->
+       <div class="article_text">{{ .ArticleText }}</div>
+    </div>
+    <a href="/" class="back">Назад</a>
+
+{{ template "footer" }}
+
+{{ end }}

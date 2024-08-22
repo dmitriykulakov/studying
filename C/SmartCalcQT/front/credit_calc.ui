@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>credit_calc</class>
+ <widget class="QWidget" name="credit_calc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QRadioButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>112</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>аннуитетный, </string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_2">
+   <property name="geometry">
+    <rect>
+     <x>171</x>
+     <y>20</y>
+     <width>191</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>дифференцированный</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QDoubleSpinBox" name="total_sum">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>7</number>
+   </property>
+   <property name="minimum">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_name_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>общая сумма кредита</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_name_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>151</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>срок</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="time">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="minimum">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_name_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>161</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>процентная ставка</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="percent">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>150</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>7</number>
+   </property>
+   <property name="minimum">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_name_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>161</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ежемесячный платеж</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_name_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>161</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>переплата по кредиту</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_name_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>161</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>общая выплата</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="month_payment">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>210</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt; label-&amp;gt;setAlignment(Qt::AlignBottom | Qt::AlignRight);&lt;/span&gt;&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  	font-size: 20px;
+  	border-radius: 15px;
+background-color: white;
+}
+
+qproperty-alignment: 'AlightRight';
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="overpayment">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>260</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt; label-&amp;gt;setAlignment(Qt::AlignBottom | Qt::AlignRight);&lt;/span&gt;&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  	font-size: 20px;
+  	border-radius: 15px;
+background-color: white;
+}
+
+qproperty-alignment: 'AlightRight';
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_payment">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>310</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt; label-&amp;gt;setAlignment(Qt::AlignBottom | Qt::AlignRight);&lt;/span&gt;&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  	font-size: 20px;
+  	border-radius: 15px;
+background-color: white;
+}
+
+qproperty-alignment: 'AlightRight';
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

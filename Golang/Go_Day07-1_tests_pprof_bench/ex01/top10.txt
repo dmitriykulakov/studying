@@ -1,0 +1,14 @@
+Showing nodes accounting for 3740ms, 60.13% of 6220ms total
+Dropped 136 nodes (cum <= 31.10ms)
+Showing top 10 nodes out of 114
+      flat  flat%   sum%        cum   cum%
+     800ms 12.86% 12.86%      900ms 14.47%  runtime.scanblock
+     710ms 11.41% 24.28%      800ms 12.86%  runtime.unlock2
+     570ms  9.16% 33.44%      620ms  9.97%  runtime.lock2
+     390ms  6.27% 39.71%     1080ms 17.36%  runtime.scanobject
+     390ms  6.27% 45.98%      470ms  7.56%  runtime.typePointers.next
+     350ms  5.63% 51.61%      350ms  5.63%  runtime.futex
+     200ms  3.22% 54.82%      270ms  4.34%  runtime.casgstatus
+     120ms  1.93% 56.75%      120ms  1.93%  runtime.nanotime (inline)
+     110ms  1.77% 58.52%      320ms  5.14%  runtime.execute
+     100ms  1.61% 60.13%      110ms  1.77%  runtime.(*spanSet).reset

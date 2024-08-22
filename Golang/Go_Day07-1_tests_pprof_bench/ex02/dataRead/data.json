@@ -1,0 +1,24 @@
+  {
+    "Title":             "func minCoins2(val int, coins []int) []int",
+    "Function_describe": "Function receives two variables int and slice []int and return an another slice []int",
+    "Variables_describe": [
+        {"Variable": "val int: an amount of coins that need to return"},
+        {"Variable":"coins []int: a slice of coins, that accept to use in function"}
+    ],
+    "Function_return":          "Result:",
+    "Function_return_describe": "   []int: a slice of coins, that represented minimum set of input coins to describe an amount val",
+   "Title_of_changes":         "There are many changes from the func minCoins(val int, coins []int) []int",
+    "Changes": [ 
+        {"Change": "add an opportunity to use unsorted slice of coins in the input"},
+        {"Change": "add an opportunity to use a slice with duplicates in the input"},
+        {"Change": "the new function works faster in case of empty input slice, val = 0 and if input slice has onle one member"},
+        {"Change": "in the new function solved problem of wrong result with input like this:"}
+],
+    "Examples": [
+        {"Example":"minCoins(32, []int{1, 6, 10, 500, 1000})"},
+        {"Example": "result: [10,10,10,1,1] - wrong"},
+        {"Example": "minCoins2(32, []int{1, 6, 10, 500, 1000})"},
+        {"Example": "result: [10,10,6,6]"}
+    ],
+    "Conclusion": "The function works right, can work with unsorted slices, many problems from the func minCoins(val int, coins []int)[]int are solved, but the new function has less speed with big input slices of coins"
+}

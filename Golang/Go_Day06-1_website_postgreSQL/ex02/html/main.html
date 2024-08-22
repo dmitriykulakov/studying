@@ -1,0 +1,24 @@
+{{ define "main"}}
+
+{{ template "header" }}
+
+<header class="header-main">
+  Main page
+</header>
+
+  <form class="" action="/change_main" method="post">
+    <div class="articles_field">  
+      {{ range . }}
+      <div class="article_field">  
+          <div class="article_id" name="article_id" value="{{.Id}}">{{ .Id }}</div>
+          <div class="article_title">{{ .Title }}</div><br>
+          <a href="http://localhost:8888/open_article/{{.Id}}" class="open_article" class="open_article">Читать</a>
+      </div>
+        {{ end }}
+      <button name="button" id="button_main" value="0">Главная страница</button>
+      <button name="button" id="button_next" value="1">Следующая страница</button>
+    </div>
+
+{{ template "footer" }}
+
+{{ end }}

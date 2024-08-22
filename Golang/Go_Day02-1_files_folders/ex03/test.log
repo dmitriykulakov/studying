@@ -1,0 +1,2 @@
+[13.06.2019 09:05:07] < 10648> tpl|   Agent '{c8fdc9b9-0d60-486c-80de-9fc4218d276f}' will be terminated due to reason: some I/O operation has hanged.
+[13.06.2019 09:06:07] < 10648> tpl| WARN|AGENT [{c8fdc9b9-0d60-486c-80de-9fc4218d276f}] HAS HANGED UNEXPECTEDLY AND WAS TERMINATED.

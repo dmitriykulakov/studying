@@ -1,0 +1,5 @@
+/etc/stove/config.xml
+/Users/baker/recipes/database.xmlf
+/Users/baker/recipes/database_version3.yaml
+/var/log/orders.log
+/Users/baker/pokemoan.avic
