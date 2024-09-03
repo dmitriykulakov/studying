@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(90, 199, 181);
+  /* background: black */
+}
+
+#header {
+  width: 100%;
+  height: 350px;
+  border-bottom: 6px solid silver;
+  text-align: center;
+  background: #333;
+  line-height: 125px;
+  float: left;
+}
+
+#image {
+  padding: 25px 0;
+}
+
+.header-main {
+  width: 100%;
+  height: 80px;
+  border-bottom: 6px solid silver;
+  text-align: center;
+  font-size: 50px;
+  background: #333;
+  color: white;
+  line-height: 80px;
+  float: left;
+  margin-bottom: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  border-top: 6px solid silver;
+  text-align: center;
+  background: #333;
+  line-height: 100px;
+  font-size: 50px;
+  float: left;
+  margin-top: 50px;
+}
+
+.save_article {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  background: #333;
+  float: left;
+}
+
+#lable_login {
+  height: 40px;
+  width: 20%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 30px;
+  color: white;
+}
+
+#login {
+  margin-top: 20px;
+  height: 40px;
+  width: 20%;
+  font-size: 30px;
+  text-align: center
+}
+
+#lable_password {
+  height: 40px;
+  width: 20%;
+  margin-right: 3%;
+  font-size: 30px;
+  color: white;
+}
+
+#password {
+  margin-top: 20px;
+  height: 40px;
+  width: 20%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.article_add_result {
+  height: 30px;
+  font-size: 20px;
+  color: red;
+}
+
+#new_article_title {
+  width: 70%;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#new_article {
+  text-align: center;
+  width: 70%;
+  height: 300px;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#button_add, .button_article, #button_main, #button_next {
+  height: 50px;
+  width: 30%;
+  color: black;
+  background: white;
+  border-color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#button_add:hover {
+  color: black;
+  background: rgb(60, 48, 223);;
+  border-radius: 15px;
+  border-color: rgb(60, 48, 223);;
+}
+
+#button_main:hover, #button_next:hover{
+  color: black;
+  background: rgb(60, 48, 223);
+  border-radius: 15px;
+  border-color: rgb(60, 48, 223);
+}
+
+
+.articles_field {
+  float: left;
+  margin-left: 15%;
+  background: #333;
+  width: 70%;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.article_field, .article_page {
+  width: 70%;
+  display: block;
+  margin-top: 25px;
+  float: left;
+  border: 10px solid silver;
+  border-style: double;
+  margin-left: 15%;
+  margin-top: 40px;
+}
+
+.article_id {
+  float: left;
+  margin-left: 10%;
+  font-size: 120px;
+  width: 5%;
+}
+
+ .article_title {
+  width: 60%;
+  margin-top: 20px;
+  float: left;
+  margin-left: 10%;
+  font-size: 30px;
+  text-align: top;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#button_main {
+  margin-left: 30%;
+  width: 20%;
+  float: left;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#button_next {
+  display: block;
+  width: 20%;
+  margin-left: 2%;
+  float: left;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.open_article {
+  width: 20%;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-left: 25%;
+  font-size: 30px;
+  color:white;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.back {
+  text-decoration: none;
+  width: 20%;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-left: 25%;
+  font-size: 30px;
+  color:#333;
+  margin-bottom: 10px;
+}
+
+.open_article:hover, .back:hover  {
+  font-size: 30px;
+  color: rgb(60, 48, 223);
+  border: 2px solid rgb(60, 48, 223);
+}
+
+.article_page {
+  color:white;
+  background: #333;
+  width: 70%;
+  border-style: double;
+  border-radius: 20px 50px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.open_article_title {
+  text-align: center;
+  font-size: 30px;
+  width: 70%;
+}
+
+.article_text {
+  text-align: justify;
+  font-size: 20px;
+  float: left;
+  width: 70%; 
+  margin-left: 10%;
+ 
+}
+
+.link {
+  color: blue;
+}
+
+
+

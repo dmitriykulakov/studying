@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os/exec"
 	"regexp"
 	"strings"
 	"text/template"
@@ -158,16 +157,16 @@ func Handle() {
 	http.ListenAndServe(":8888", nil)
 }
 
-func Unzip() {
-	cmd := exec.Command("unzip", "-o", "./html/statics.zip", "-d", "./html/")
-	err := cmd.Run()
-	if err != nil {
-		log.Println(err)
-	}
-}
+// func Unzip() {
+// 	cmd := exec.Command("unzip", "-o", "./html/statics.zip", "-d", "./html/")
+// 	err := cmd.Run()
+// 	if err != nil {
+// 		log.Println(err)
+// 	}
+// }
 
 func main() {
-	Unzip()
+	// Unzip()
 	database.CreateDatabase()
 	Handle()
 }
